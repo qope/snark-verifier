@@ -140,6 +140,7 @@ mod halo2_lib {
         loader::halo2::{Context, EccInstructions, IntegerInstructions},
         util::arithmetic::{CurveAffine, Field},
     };
+    use halo2_base::halo2_proofs::halo2curves::group::ff::PrimeField as FfPrimeField;
     use halo2_base::{
         self,
         gates::{flex_gate::FlexGateConfig, GateInstructions, RangeInstructions},
